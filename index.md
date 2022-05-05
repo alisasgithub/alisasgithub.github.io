@@ -15,4 +15,12 @@ Reach out and say hello:
 - [LinkedIn](https://www.linkedin.com/in/alisabacon/)
 - [GitHub](https://github.com/alisasgithub)
 
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
 {% include last-updated.html %}

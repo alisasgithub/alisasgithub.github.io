@@ -1,2 +1,5 @@
 url: "https://www.alisabacon.com" 
 title: "Alisa Bacon's portfolio" 
+
+permalink: /
+relative_permalinks: false
