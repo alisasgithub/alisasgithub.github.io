@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   {% include head.html %}
-  <body class="{{ layout.class }}">
-    <div class="wrapper">
+  {% include nav.html %}
+  <body class="{{ page.class }}">
+    <div class="wrapper" id="{{ page.class }}">
       <main>{{ content }}</main>
     </div>
 
     
   </body>
+  {% include footer.html %}
 </html>

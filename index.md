@@ -1,18 +1,17 @@
 ---
 layout: default
 title: "Alisa Bacon's portfolio"
+class: "index"
+permalink: /
 ---
 
-# Alisa Bacon's portfolio
+# Hi! I'm Alisa. I design at Microsoft. Most recently, I developed design strategy for artificial intelligence in education experiences.
 
-Alisa Bacon is a designer based in Seattle, WA. She is currently on the Education Audience UX team at Microsoft. 
+Human-centered design has my heart, though content design is a close second. I love having a problem to solve -- big, messy, systems-level ones are my favorite kind.
 
-Previously, she owned educator experiences for [Reading Progress](https://support.microsoft.com/en-us/topic/getting-started-with-reading-progress-in-teams-7617c11c-d685-4cb7-8b75-3917b297c407) on Microsoft's Teams platform. She was also a designer at [Optimal](https://www.optimal.com/).
-
-Reach out and say hello:
-
-- [Email](mailto:hello@alisabacon.com)
-- [LinkedIn](https://www.linkedin.com/in/alisabacon/)
-- [GitHub](https://github.com/alisasgithub)
-
-{% include last-updated.html %}
+<div class="last-updated">
+    <img src="/assets/under-construction.gif" />
+    <img src="/assets/under-construction.gif" />
+    <img src="/assets/under-construction.gif" />
+    <p><a href="http://textfiles.com/underconstruction/">gif credit</a></p>
+</div>

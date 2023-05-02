@@ -1,0 +1,18 @@
+<nav>
+    <div>
+        <a class="menu-title" href="{{ site.baseurl }}/">Alisa Bacon</a>
+        <a class="menu-title menu-mobile" href="{{ site.baseurl }}/">AB</a>
+        <span class="menu-spacer">&#xb7;</span>
+        <span class="menu">
+            <ul>
+                {% if page.url == '/about' %}
+                <li><a class="unselected" href="/">Work</a><a class="unselected">,</a></li>
+                <li><a href="/about">About</a></li>
+                {% else if %}
+                <li><a href="/">Work</a>,</li>
+                <li><a href="/about">About</a></li>
+                {% endif %}
+            </ul>
+        </span>
+    </div>
+</nav>
