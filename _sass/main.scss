@@ -1,8 +1,14 @@
 $backgroundColor: #ffffff;
 $bodyColor: #161616;
 $bodyFont: Inter,Helvetica,Arial,sans-serif;
-$colorPrimary: #7795FD;
+$secondaryFont: Bookmania,serif;
+$colorPrimary: #6D8CFD;
 $colorLink: #4F73EF; // links
+$colorPrimaryDark: hsla(228, 57%, 45%, 1);
+$colorBlack: #343A51;
+$paleGradient1: #F5F7FF;
+$paleGradient2: #F5FDFC;
+
 
 body {
   background: $backgroundColor;
@@ -18,6 +24,14 @@ body {
   @media (max-width: 820px) {
     width: 90%;
   }
+}
+
+/* Shared styles */
+h1 {
+  font-weight: 600;
+  font-size: 4rem;
+  letter-spacing: -3.5px;
+  line-height: 5rem;
 }
 
 a {
@@ -115,17 +129,14 @@ footer {
   padding: 3rem 0;
   color: lighten($bodyColor, 50%);
   font-size: 0.75rem;
+
+  @media screen and (max-width: 760px) {
+    padding-bottom: 1.25rem;
+  }
 }
 
 /* special page styles */ 
 #index {
-  h1 {
-    font-weight: 600;
-    font-size: 4rem;
-    letter-spacing: -3.5px;
-    line-height: 5rem;
-  }
-  
   p {
     font-family: "bookmania", serif;
     font-weight: 400;
@@ -158,3 +169,179 @@ footer {
   }
 }
 
+/* Case study styles */
+article {
+  margin-top: 3.5rem;
+
+  img {
+    border-radius: 6px;
+  }
+
+  h1 {
+    margin: 2rem 0 1rem 0;
+    line-height: 94%;
+  }
+
+  h2 {
+    font-family: $secondaryFont;
+    font-size: 1.625rem;
+    font-weight: 400;
+    line-height: 37px;
+    letter-spacing: -0.025em;
+    color: hsla(228, 57%, 45%, 1);
+    margin-top: 3.75rem;
+  }
+
+  h3 {
+    font-family: $secondaryFont;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.07em;
+    color: $colorBlack;
+    text-transform: uppercase;
+  }
+
+  p {
+    letter-spacing: -.25px;
+    line-height: 1.75rem;
+  }
+
+  p, h2, .halfwidth {
+    max-width: 680px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &.fullwidth {
+      max-width: 1062px;
+    }
+  }
+
+  @media screen and (max-width: 760px) {
+    margin-top: 1rem;
+
+    h1 {
+      font-size: 3rem;
+    } 
+
+    h2 {
+      margin-top: 2rem;
+      margin-bottom: 0;
+
+      & + p {
+        margin-top: 0.25rem;
+      }
+    }
+  }
+}
+
+.cover {
+    max-width: -webkit-fill-available;
+  }
+
+.subtitle {
+  font-family: $secondaryFont;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+  text-align: left;
+  margin-bottom: 0.5rem;
+
+  @media screen and (max-width: 460px) {
+    font-size: 1.5rem;
+  }
+}
+
+.blurb {
+  font-family: $secondaryFont;
+  font-size: 1.375rem;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: -0.025em;
+}
+
+.grid {
+  display: flex;
+ }
+.col-1-2 {
+  flex: 1;
+}
+.cole-1-2:last-child {
+  margin-left: 20px;
+}
+
+/* Key insight styling */
+.key-insight {
+  margin: 3rem auto;
+  padding-left: 5rem;
+  position: relative;
+
+  .header { // shares styles with span verion
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $colorPrimaryDark;
+    position: relative;
+    z-index: 1;
+  }
+
+  .content {
+    position: relative;
+    z-index: 1;
+    font-family: $secondaryFont;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    letter-spacing: -0.01em;
+  }
+
+  svg {
+    position: absolute;
+    bottom: -1.5rem;
+    left: 1rem;
+    z-index: 0;
+    width: 8rem;
+    height: 8rem;
+  }
+
+  /* Key insight mobile styling */
+  @media screen and (max-width: 819px) {
+    padding-left: 1.5rem;
+
+    svg {
+      left: -1rem;
+      bottom: -1rem;
+    }
+  }
+
+  @media screen and (max-width: 508px) {
+    padding-left: 1rem; 
+
+    svg {
+      bottom: 1.75rem;
+      left: -2rem;
+    }
+  }
+
+  @media screen and (min-width:820px) and (max-width: 914px) {
+    padding-left: 2rem;
+
+    svg {
+      left: -2rem;
+    }
+  }
+}
+
+span.inline-key-insight {
+  font-family: Inter;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.75rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: $colorPrimaryDark;
+}

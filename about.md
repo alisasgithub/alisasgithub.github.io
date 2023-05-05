@@ -17,3 +17,4 @@ I'm still working on my site. Come back soon!
     <img src="/assets/under-construction.gif" />
     <p><a href="http://textfiles.com/underconstruction/">gif credit</a></p>
 </div>
+

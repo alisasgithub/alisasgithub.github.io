@@ -1,0 +1,20 @@
+<div class="key-insight halfwidth">
+    <div class="header">Key insight {{ include.number }} 💡</div>
+    <div class="content">
+        {{ include.content }}
+    </div>
+    <svg
+        viewBox="0 0 2 2"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+        <linearGradient id="myGradient">
+            <stop offset="10%" stop-color="#F5F7FF" />
+            <stop offset="95%" stop-color="#F5FDFC" />
+        </linearGradient>
+        </defs>
+    
+        <!-- using my radial gradient -->
+        <circle cx="1" cy="1" r="1" fill="url('#myGradient')" />
+    </svg>
+</div>

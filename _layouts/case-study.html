@@ -2,6 +2,14 @@
 layout: default
 ---
 
-<div class="case-study">
-    {{ content }}
-</div>
+<article class="case-study">
+    <header>
+        <img class="cover" src="{{site.url}}/assets{{page.url}}/cover.png">
+        <h1 class="halfwidth">{{ page.title }}</h1>
+        <div class="subtitle halfwidth">{{ page.whowhen }}</div>
+        <div class="blurb halfwidth">{{ page.blurb }}</div>
+    </header>
+    <div class="half-width">
+        {{ content }}
+    </div>
+</article>
