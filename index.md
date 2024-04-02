@@ -5,13 +5,8 @@ class: "index"
 permalink: /
 ---
 
-# Hi! I'm Alisa. I design at Microsoft. Most recently, I developed design strategy for artificial intelligence in education experiences.
+# Hi! I’m Alisa, a senior designer. <span class="inline-block">I specialize</span> in building trust with customers and guide teams across Microsoft on how to do just that.
 
-Human-centered design has my heart, though content design is a close second. I love having a problem to solve -- big, messy, systems-level ones are my favorite kind.
+Three words describe my work: privacy, storytelling, and research. And no, this site doesn't track you.
 
-<div class="last-updated">
-    <img src="/assets/under-construction.gif" />
-    <img src="/assets/under-construction.gif" />
-    <img src="/assets/under-construction.gif" />
-    <p><a href="http://textfiles.com/underconstruction/">gif credit</a></p>
-</div>
+You can [reach out to me](mailto:hi@alisabacon.com) to learn more.

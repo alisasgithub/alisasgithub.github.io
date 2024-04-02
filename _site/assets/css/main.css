@@ -5,9 +5,26 @@ body { background: #ffffff; color: #161616; font-family: Inter, Helvetica, Arial
 /* Shared styles */
 h1 { font-weight: 600; font-size: 4rem; letter-spacing: -3.5px; line-height: 5rem; }
 
-a { color: #4F73EF; text-decoration: none; transition: color 200ms; }
+h1.small { font-size: 2.625rem; margin: 2rem 0 1rem 0; line-height: 94%; letter-spacing: -2px; }
+
+a { color: #4F73EF; text-decoration: none; transition: color 200ms; font-weight: 500; }
 
 a:hover { color: #1441dd; }
+
+hr { margin: 3rem auto; max-width: 690px; border: 1px solid #F0F1F4; }
+
+.inline-block { display: inline-block; }
+
+/* icon styles */
+ul.fa-ul { margin-left: auto; }
+
+li { line-height: 1.5rem; margin: 0.75rem; }
+
+li i.fa-xmark { color: #E46C6C; }
+
+li i.fa-arrow-turn-up, li i.fa-arrow-turn-down { color: #87C98E; }
+
+.left-spacing { display: block; margin-left: 3rem; }
 
 /* Nav bar styles */
 nav { text-transform: uppercase; font-size: 1.125rem; margin: 2rem 0 0; }
@@ -22,7 +39,7 @@ nav .menu-spacer { margin: 0 0.25rem; }
 
 nav .menu ul { display: inline-block; padding-left: 0; }
 
-nav .menu ul li { list-style: none; display: inline; font-weight: 500; }
+nav .menu ul li { list-style: none; display: inline; font-weight: 500; margin: 0; }
 
 nav .menu ul li a { color: #161616; transition: color 200ms; }
 
@@ -35,33 +52,57 @@ nav .menu ul li a.unselected:hover { color: #2251fc; }
 @media screen and (max-width: 396px) { nav .menu-spacer, nav .menu-title { display: none; } nav .menu-mobile { display: inline-block; font-size: 1.75rem; position: relative; bottom: 6px; } nav .menu ul { float: right; margin: 0; } nav .menu ul li { padding-right: 0.5rem; } }
 
 /* footer styles */
-footer { margin-top: auto; padding: 3rem 0; color: #969696; font-size: 0.75rem; }
+footer { margin-top: auto; padding: 3rem 0 1.5rem; color: #969696; font-size: 0.75rem; }
 
 @media screen and (max-width: 760px) { footer { padding-bottom: 1.25rem; } }
 
 /* special page styles */
+#index a.list-item { color: #161616; transition: color 200ms; }
+
+#index a.list-item:hover { color: #51566C; }
+
 #index p { font-family: "bookmania", serif; font-weight: 400; font-size: 1.5rem; line-height: 1.2; max-width: 42rem; }
 
-@media screen and (max-width: 760px) { #index h1 { font-size: 2.5rem; line-height: 3.5rem; } #index p { font-size: 1.25rem; } }
+#index .case-study-list { margin-top: 8rem; }
 
-@media screen and (max-width: 600px) { #index h1 { font-size: 1.75rem; line-height: 2rem; letter-spacing: -1.5px; } #index p { font-size: 1.25rem; } }
+#index .list-item { display: flex; flex-direction: row; }
+
+#index .list-item-title { width: 50%; }
+
+#index .list-item-description { width: 50%; font-size: 1.3rem; letter-spacing: -1px; font-weight: 400; }
+
+#index h2 { margin-top: 0; margin-bottom: 0; text-transform: uppercase; font-weight: 600; letter-spacing: -1px; font-size: 1.8rem; }
+
+#index .who-when { font-family: Bookmania, serif; font-size: 1.75rem; font-style: italic; font-weight: 300; letter-spacing: -0.025em; text-align: left; margin-top: 0; }
+
+#index hr { max-width: none; border-bottom: 1px solid #161616; }
+
+@media screen and (max-width: 600px) { #index .list-item-title { width: 100%; } #index .list-item-description { width: 100%; } #index h1 { font-size: 1.75rem; line-height: 2rem; letter-spacing: -1.5px; } #index p { font-size: 1.25rem; } }
+
+@media screen and (max-width: 760px) { #index h1 { font-size: 2.5rem; line-height: 3.5rem; } #index p { font-size: 1.25rem; } }
 
 /* Case study styles */
 article { margin-top: 3.5rem; /* Mobile case study styles */ }
 
-article img { border-radius: 6px; }
+article img { border-radius: 6px; max-width: 100%; height: auto; }
+
+article p, article h2, article h3, article ul, article figure, article .halfwidth { max-width: 680px; margin-left: auto; margin-right: auto; }
+
+article p.fullwidth, article h2.fullwidth, article h3.fullwidth, article ul.fullwidth, article figure.fullwidth, article .halfwidth.fullwidth { max-width: 1062px; margin-left: auto; margin-right: auto; }
 
 article h1 { margin: 2rem 0 1rem 0; line-height: 94%; }
 
 article h2 { font-family: Bookmania, serif; font-size: 1.625rem; font-weight: 400; line-height: 37px; letter-spacing: -0.025em; color: #314cb4; margin-top: 3.75rem; }
 
-article h3 { font-family: Bookmania, serif; font-size: 1.125rem; font-weight: 700; line-height: 25px; letter-spacing: 0.07em; color: #343A51; text-transform: uppercase; }
+article h3 { font-family: Inter, Helvetica, Arial, sans-serif; font-size: 1rem; font-weight: 600; line-height: 25px; letter-spacing: -.02em; color: #51566C; text-transform: uppercase; margin-top: 2rem; }
+
+article h2 + h3 { margin-top: 1rem; }
 
 article p { letter-spacing: -.25px; line-height: 1.75rem; }
 
-article p, article h2, article .halfwidth { max-width: 680px; margin-left: auto; margin-right: auto; }
+article figcaption { color: #A2A7B9; text-align: center; }
 
-article p.fullwidth, article h2.fullwidth, article .halfwidth.fullwidth { max-width: 1062px; }
+article .sidenote { color: #A2A7B9; }
 
 @media screen and (max-width: 760px) { article { margin-top: 1rem; } article h1 { font-size: 3rem; } article h2 { margin-top: 2rem; margin-bottom: 0; line-height: 102%; } article h2 + p { margin-top: 0.25rem; } }
 
@@ -77,7 +118,11 @@ article p.fullwidth, article h2.fullwidth, article .halfwidth.fullwidth { max-wi
 
 .grid { display: flex; }
 
-.col-1-2 { flex: 1; }
+.col-1-2 { flex: 1; padding: 0 1rem; }
+
+.col-1-2:first-child { padding-left: 0; }
+
+.col-1-2:last-child { padding-right: 0; }
 
 .cole-1-2:last-child { margin-left: 20px; }
 
@@ -96,6 +141,6 @@ article p.fullwidth, article h2.fullwidth, article .halfwidth.fullwidth { max-wi
 
 @media screen and (min-width: 820px) and (max-width: 914px) { .key-insight { padding-left: 2rem; } .key-insight svg { left: -2rem; } }
 
-span.inline-key-insight { font-family: Inter; font-size: 0.9rem; font-weight: 700; line-height: 1.75rem; letter-spacing: 0.02em; text-transform: uppercase; color: #314cb4; }
+span.inline-key-insight { display: inline-block; font-family: Inter; font-size: 0.9rem; font-weight: 700; line-height: 1.75rem; letter-spacing: 0.02em; text-transform: uppercase; color: #314cb4; }
 
 /*# sourceMappingURL=main.css.map */
